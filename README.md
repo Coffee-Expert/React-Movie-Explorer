@@ -10,18 +10,14 @@ A sleek React application that lets you search for movies via [TheMovieDB API](h
 - **Persistent Storage:** Favourites persist across sessions thanks to local storage.
 - **Responsive UI:** A modern design built with React for a seamless experience on any device.
 
-## Demo
-
-*If you have a live demo available, include the link below:*
-
-[Live Demo](https://your-demo-link.com)
+ 
 
 ## Installation
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/react-movie-explorer.git
+   git clone https://github.com/coffee-expert/react-movie-explorer.git
    cd react-movie-explorer
     
 
@@ -46,7 +42,7 @@ A sleek React application that lets you search for movies via [TheMovieDB API](h
 2. **Start the development server:**
 
    ```bash
-   npm start
+   npm run dev
    ```
 
    Navigate to [http://localhost:3000](http://localhost:3000) in your browser to start exploring movies.
@@ -80,7 +76,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - your_email@example.com
+Abhishek Kevin Gomes - abhishekevingomes@gmail.com
 
 Project Link: [https://github.com/yourusername/react-movie-explorer](https://github.com/yourusername/react-movie-explorer)
 ```
