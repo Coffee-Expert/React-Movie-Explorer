@@ -24,6 +24,8 @@ const Home = () => {
       }
     };
     fetchMovies();
+    window.addEventListener("homeClick", fetchMovies); // added Event Listener
+     return () => window.removeEventListener("homeClick", fetchMovies);
   }, []);
 
   const handleSubmit = (obj) => {};

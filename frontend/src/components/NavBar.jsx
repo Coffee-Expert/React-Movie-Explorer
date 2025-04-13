@@ -8,7 +8,7 @@ function NavBar() {
         <Link to="/">Movie App</Link>
       </div>
       <div className="navbar-links">
-        <Link to="/" className="nav-link">
+        <Link to="/" className="nav-link" onClick={() => window.dispatchEvent(new Event("homeClick"))}>
           Home
         </Link>
         <Link to="/favorites" className="nav-link">
