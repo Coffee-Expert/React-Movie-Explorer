@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+  margin: 0;
+  background: url("https://www.transparenttextures.com/patterns/dark-mosaic.png")
+    repeat;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+}
+
+/* Root Container */
+.appletv-root {
+  background: #000;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+/* Loader */
+.appletv-loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Section */
+.appletv-hero {
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  filter: brightness(0.8);
+}
+
+.appletv-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 60%);
+  z-index: 0;
+}
+
+.appletv-hero-overlay {
+  position: relative;
+  z-index: 1;
+  padding: 3rem;
+  width: 100%;
+}
+
+/* Glass Effects */
+.glass-light {
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+}
+.glass {
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 12px;
+}
+
+/* Hero Title */
+.appletv-hero-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Genre Chips */
+.appletv-genre-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Meta Info */
+.hero-meta {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Expandable Overview */
+.appletv-hero-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 700px;
+}
+
+.scrollable-info {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+.scrollable-info::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollable-info::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Expand Button */
+.expand-toggle {
+  color: white;
+  margin-top: 0.5rem;
+  transition: transform 0.3s ease;
+}
+.expand-toggle.expanded {
+  transform: rotate(180deg);
+}
+
+/* Carousel Section */
+.appletv-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 0 2rem 4rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.appletv-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+.appletv-carousel::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+/* Movie Card */
+.appletv-movie-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+.appletv-movie-card:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
